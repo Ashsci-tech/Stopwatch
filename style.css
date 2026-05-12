@@ -1,17 +1,85 @@
-.stopwatch{
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*.buttons{
+body {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    color:red;
-}*/
+
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stopwatch {
+
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.stopwatch:hover {
+    transform: translateY(-5px);
+}
+
+.stopwatch h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#timer {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+}
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#start {
+    background: #00c853;
+    color: white;
+}
+
+#stop {
+    background: #ff1744;
+    color: white;
+}
+
+#reset {
+    background: #ff9100;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.08);
+
+    opacity: 0.9;
+}
